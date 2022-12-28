@@ -74,23 +74,24 @@ for i in range(len(st.session_state['past'])) :
     time = datetime.now()
     st.markdown(
     """
-        <div class="msg right=msg">
-            <div class ="msg-img" style="background-image : url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEyMzFfNzIg%2FMDAxNjQwOTMyNjEyOTI5.p8_7iNoyyLN7vUaepxn5a_1MXzfvbgcKl0gDVAmRtFYg.OLFaVd2EgB2fcRPpLH790-1dvRc60OfXtDjYruZS8j4g.PNG.moonskinz%2F%25B9%25AE%25B5%25F0%25C0%25DA%25C0%25CE_%25B5%25F0%25BD%25BA%25C4%25DA%25B5%25E5_%25288%2529.png&type=sc960_832)"></div>
+        <div class="msg-right=msg">
             <div class="msg-bubble">
                 <div class ="msg-info">
+                    <div class ="msg-img" style="background-image : url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEyMzFfNzIg%2FMDAxNjQwOTMyNjEyOTI5.p8_7iNoyyLN7vUaepxn5a_1MXzfvbgcKl0gDVAmRtFYg.OLFaVd2EgB2fcRPpLH790-1dvRc60OfXtDjYruZS8j4g.PNG.moonskinz%2F%25B9%25AE%25B5%25F0%25C0%25DA%25C0%25CE_%25B5%25F0%25BD%25BA%25C4%25DA%25B5%25E5_%25288%2529.png&type=sc960_832)"></div>
+                    <div class = "msg-info-name">나</div>
                     <div class = "msg-info-time">{0}:{1}</div>
                 </div>
-                <p>{2}</p>
+                <p class = "result">{2}</p>
             </div>
-        </div>
-        <div class = "msg left-msg">
-            <div class ="msg-img" style="background-image : url(https://search.pstatic.net/sunny/?src=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F47351101%3Fv%3D4%3Fs%3D400&type=sc960_832)"></div>
+        </div> 
+        <div class = "msg-left-msg">
             <div class = "msg-bubble">
                 <div class = "msg-info">
+                    <div class ="msg-img" style="background-image : url(https://search.pstatic.net/sunny/?src=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F47351101%3Fv%3D4%3Fs%3D400&type=sc960_832)"></div>
                     <div class = "msg-info-name">소마고 챗봇</div>
                     <div class = "msg-info-time">{3}:{4}</div>
                 </div>
-                <p>{5}</p>
+                <p class = "result">{5}</p>
             </div>
         </div>
     """.format(time.hour, time.minute, st.session_state['past'][i], time.hour, time.minute, st.session_state['generated'][i])

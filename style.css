@@ -2,4 +2,24 @@
   width: 30px;
   height: 30px;
   background-size:30px 30px;
+  border-radius: 50%;
+}
+.msg-info {
+  display:flex;
+  margin: 10px 0;
+}
+
+.msg-info-name {
+  margin: 0px 10px;
+  font-weight: 700;
+  margin-top: 3px;
+}
+
+.msg-info-time {
+  margin-top : 3px;
+  color: grey;
+}
+
+.result {
+  margin-left:20px;
 }
